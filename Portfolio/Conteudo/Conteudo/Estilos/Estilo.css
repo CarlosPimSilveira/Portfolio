@@ -1,0 +1,45 @@
+body{
+        font-family: 'Open Sans', sans-serif;
+        background: #2c3e50;
+        line-clamp: 1.5;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        background-color: #ddd;
+        border-radius: 50%;
+        height: 200px;
+        object-fit: cover;
+        width: 200px;  
+        position: relative;
+        
+      }
+     img {
+        position: absolute;
+        bottom: 100;
+        width: 10%;
+      
+      }
+      .container { 
+        width: 700px; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    p{
+      color: #ddd;
+      
+    }
+    h1{
+      width: 700px; 
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    a:link {
+      color: black;
+      background-color: #ddd;
+     }
+    
