@@ -1,70 +1,104 @@
 @charset "UTF-8";
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'titulos';
+  src: url(../Font/Comic\ Gecko\ Pro.otf) format('opentype');
 }
 
+:root{
+  --cor_01: #003670;
+  --cor_02: #499BF2; 
+  --cor_03: #0074F0;
+  --cor_04: #224870;
+  --cor_05: #005BBD;
+  --cor_06: #499bf275;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  background-color: var(--cor_02);
+  padding-top: 20px;
+  font-size: 3em;
+}
+
+header h1{
+  text-align: center;
+  font-family: 'titulos';
+}
+
+nav{
+  background-color: var(--cor_02);
+  padding: 10px;
+  text-shadow: 0px 7px 9px rgba(0, 0, 0, 0.165);
+  text-align: center;
+}
+
+nav > a{
+  color: var(--cor01);
+  padding: 10px; 
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition-duration: 0.7s;
+  font-family: 'titulos';
+}
+
+nav > a:hover{
+  background-color: var(--cor_03);
+  color: var(--cor05);
+}
+
+
 body{
-  background-image: linear-gradient(to right, #f1d8c9, #f1b793);
-  /*background: #2c3e50;
-  /*line-clamp: 1.5;*/
+  background-color: var(--cor_06);
 }
 
 
 main{
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 5px 5px 15px #997966cb;
-  width: 600px;
-  padding: 10px;
+  background-color: rgba(173, 192, 224, 0.836);
+  min-width: 300px;
+  max-width: 1000px;
   margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-h1{
-  color: #f39209;
-  text-align: center;
-  text-shadow: 2px 2px 3px #b46c08c7;
-}
-
-h2{
-  color: #836350;
-}
-
-p{
-  text-align: justify;
-}
-
-/*.container { 
-  width: 700px; 
-  margin-left: auto;
-  margin-right: auto; 
-
-
-h1{
-width: 700px; 
-margin-left: auto;
-margin-right: auto; 
-}*/
-
-.foto{
-  position: absolute;
-  bottom: 100;
-  width: 10%;
-}
-
-img {
-  background-color: #ddd;
-  border-radius: 50%;
-  height: 200px;
-  object-fit: cover;
-  width: 200px;  
-  position: relative;
-}
-
-.logo{
+main p{
   color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'titulos';
+  line-height: 1.2em;
+  text-align: justify; 
+}
+
+footer{
+  background-color: var(--cor_02);
+  text-decoration: none;
   text-align: center;
+  font-weight: bold;
+  font-size: 0.8em;
+
+  display: block;
+  padding: 5px;
+  
+}
+
+footer a{
+  color: black;
+  text-decoration: none;  
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer > a:hover{
+  color: var(--cor_05);
+  text-decoration: underline;
 }
